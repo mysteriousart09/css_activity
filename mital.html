@@ -8,120 +8,169 @@
 
 <style>
 
-/* Header/Logo Title */
-.header
+   *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+header
+    {
+        width: auto;
+        height: 100px;
+        padding: 10px;
+        display: block;
+        align="center";
+        background-color: rgb(146, 164, 109);
+}
+.title
 {
-    padding: 10px; 
     text-align: center;
-    background: rgb(82, 179, 82);
+    padding-top: 15px;
     color: white;
-    font-size: 16px;
-} 
-
-/* Center the image */
-img 
+}  
+.image
 {
     display: block;
-    margin-left: auto;
+    margin-left:auto;
     margin-right: auto;
-    padding: 20px;
+    margin-top: 35px;
+    height: 300px;
+    width: 450px;
+    border-radius: 7px;
 }
-  
-/* Box Model */
-.box 
+.dev h4{
+    margin-top: 50px;
+    text-align: center;
+    font-size:  20px;
+}
+.dev p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.container 
 {
-    border: 2px solid rgb(243, 240, 240);
-    padding: 10px;
-    margin: 1px;
-    background-color: rgb(255, 254, 254);
-    border: 5px solid rgb(228, 233, 228);
-}   
-
-/* container for Images */
-.image-row
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+.container h2 
 {
-  display: flex;
-/* arrange side by side */
-  justify-content: left;
-/* space between images */
-  margin: 0px 0;
-  max-width:1200 px;
-    padding: 10px;
+      color: #fffbfb;
+      margin-bottom: 30px;
+      font-weight: normal;
 }
+ .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+     .card{
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      width: 350px;
+      height: 400px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .card-img1 {
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      width: 350px;
+      height: 250px;
+      display: block;
+    }
+    .card-img2 {
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      width: 350px;
+      height: 250px;
+      display: block;
+    }
+    .card-img3 {
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      width: 350px;
+      height: 250px;
+      display: block;
+    }
+ 
+    .card-title {
+      color: #336c36;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .card-text {
+      color: #000000;
+      font-size: 14px;
+      margin: 10px 20px 0;
+    }
+ 
+    footer {
+      background-color: #3c3838;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+    }
+ 
+    @media (max-width: 900px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
-.image-row img
-{
-  width: 350px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 0px;
-  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
-  display: flex;
-  margin: 10px;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after the columns */
-/* Footer */
-.footer
-{
-    background:rgb(42, 36, 36);
-    color: white;
-    margin-bottom: 30px;
-    padding: 1px;
-}
-
-/* Text content inside box */
-.box-content
-{
-    padding: 10px;
-}
 
 </style>
+</head>
+<header>
+        <h1 class="title">Welcome to My Website</h1>
+</header>
+
+</style>
+</head>
 
 <body>
-
-<div class="header">
-<h1 id="Main Header" align="center"> Welcome to My Website</h1>
-</div>
-
-<img src="/pexels-fauxels-3183197.jpg" width="400" height="250">
-
-<h2 align="center"> Learn CSS Easily</h2>
-<p align="center">Master the art of styling with hands-on projects</p>
-
-<!--Box Model-->
-<div class="image-row">
-    <div style="display: flex; align-items:center; justify-content:center ;flex-wrap: wrap; width: 100%">
-        <div style= border:2px solid #ccc padding: 10px ; width: 200px ; text-align:center>
-            <img src="/pexels-photo-3873856.jpeg" alt="Interactive Lessons" style="width:500" height="250">     
-            <h3 style="color:green" align="center">Interactive Lessons</h3>
-            <p align="center">Engage with exercises and real-world examples.</p>
-        </div>
-     
-        <div style= border:2px solid #ccc padding: 10px ; width: 200px ; text-align:center>
-            <img src="/Continuous-Monitoring-mockup-01-1-scaled.webp" alt="" style="width:400" height="250">
-            <h3 style="color:green" align="center">Step by step</h3>
-            <p align="center">Follow simple steps to understand CSS concepts.</p>
-        </div>
-
-         <div style= border:2px solid #ccc padding: 10px ; width: 200px ; text-align:center>
-            <img src="/pngtree-people-at-a-conference-table-with-large-windows-picture-image_2497143.jpg" alt="Build" style="width:400" height="250">
-            <h3 style="color:green" align="center">Build Projects</h3>
-            <p align="center">Apply your knowledge to create real landing pages.</p>
-        </div>
+<img class="image"  src="/pngtree-people-at-a-conference-table-with-large-windows-picture-image_2497143.jpg" alt="">
+  <div class="dev">
+     <h4>Learn CSS Easily</h4>
+     <p>Master the art of styling with hands-on projects.</p>
+<div class="container">
+    
+    <div class="cards">
+      <div class="card">
+        <img class="card-img1" src="/pexels-fauxels-3183197.jpg" alt="Typing Hands">
+        <div class="card-title">Interactive Lessons</div>
+        <div class="card-text">Engage with exercises and real-world examples.</div>
+      </div>
+ 
+      <div class="card">
+        <img class="card-img2" src="./pexels-photo-3873856.jpeg" alt="Typing Hands">
+        <div class="card-title">Step by Step</div>
+        <div class="card-text">Follow simple steps to understand CSS concepts.</div>
+      </div>
+ 
+    <div class="card">
+        <img class = "card-img3" src="./pngtree-people-at-a-conference-table-with-large-windows-picture-image_2497143.jpg" alt="Office Workspace">
+        <div class="card-title">Build Projects</div>
+        <div class="card-text">Apply your knowledge to create real landing pages.</div>
+      </div>
     </div>
-</div>
-<!-- End Box Model-->
-
-<div class="footer">
-   <h4 align="center">© 2025 My Landing Page Project</h4>
-</div>
-
+  </div>
+<footer>
+    &copy; 2025 My Landing Page Project
+</footer>
 </body>
 </html>
+</body>
+</html>
+ 

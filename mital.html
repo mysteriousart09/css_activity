@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+</head>
+
+<style>
+
+/* Header/Logo Title */
+.header
+{
+    padding: 10px; 
+    text-align: center;
+    background: rgb(82, 179, 82);
+    color: white;
+    font-size: 16px;
+} 
+
+/* Center the image */
+img 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+  
+/* Box Model */
+.box 
+{
+    border: 2px solid rgb(243, 240, 240);
+    padding: 10px;
+    margin: 1px;
+    background-color: rgb(255, 254, 254);
+    border: 5px solid rgb(228, 233, 228);
+}   
+
+/* container for Images */
+.image-row
+{
+  display: flex;
+/* arrange side by side */
+  justify-content: left;
+/* space between images */
+  margin: 0px 0;
+  max-width:1200 px;
+    padding: 10px;
+}
+
+.image-row img
+{
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: 10px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after the columns */
+/* Footer */
+.footer
+{
+    background:rgb(42, 36, 36);
+    color: white;
+    margin-bottom: 30px;
+    padding: 1px;
+}
+
+/* Text content inside box */
+.box-content
+{
+    padding: 10px;
+}
+
+</style>
+
+<body>
+
+<div class="header">
+<h1 id="Main Header" align="center"> Welcome to My Website</h1>
+</div>
+
+<img src="/pexels-fauxels-3183197.jpg" width="400" height="250">
+
+<h2 align="center"> Learn CSS Easily</h2>
+<p align="center">Master the art of styling with hands-on projects</p>
+
+<!--Box Model-->
+<div class="image-row">
+    <div style="display: flex; align-items:center; justify-content:center ;flex-wrap: wrap; width: 100%">
+        <div style= border: 2px solid #ccc padding: 10px ; width: 200px ; text-align:center>
+            <img src="/pexels-photo-3873856.jpeg" alt="Interactive Lessons" style="width:500" height="250">     
+            <h3 style="color:green" align="center">Interactive Lessons</h3>
+            <p align="center">Engage with exercises and real-world examples.</p>
+        </div>
+     
+        <div style= border: 2px solid #ccc padding: 10px ; width: 200px ; text-align:center>
+            <img src="/Continuous-Monitoring-mockup-01-1-scaled.webp" alt="" style="width:400" height="250">
+            <h3 style="color:green" align="center">Step by step</h3>
+            <p align="center">Follow simple steps to understand CSS concepts.</p>
+        </div>
+
+         <div style= border: 2px solid #ccc padding: 10px ; width: 200px ; text-align:center>
+            <img src="/pngtree-people-at-a-conference-table-with-large-windows-picture-image_2497143.jpg" alt="Build" style="width:400" height="250">
+            <h3 style="color:green" align="center">Build Projects</h3>
+            <p align="center">Apply your knowledge to create real landing pages.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+   <h4 align="center">© 2025 My Landing Page Project</h4>
+</div>
+
+</body>
+</html>
